@@ -32,20 +32,25 @@
         background: linear-gradient(to right, black, #4a90e2);
         color: white;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 10px 0 10px 10px;
       }
       .portfolio-section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 40px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 40px 40px;
       }
       .portfolio-content {
-        max-width: 50%;
+        flex: 1;
+        min-width: 300px;
       }
       .portfolio-section img {
-        max-width: 45%;
+        max-width: 100%;
         border-radius: 10px;
+        flex: 1;
+        min-width: 300px;
       }
       .youtube-section {
         text-align: center;
@@ -84,6 +89,12 @@
       .contact-btn:hover {
         background: white;
         color: black;
+      }
+      @media (max-width: 768px) {
+        .portfolio-section {
+          flex-direction: column;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -129,7 +140,7 @@
       <p>Showcasing Our Best Work</p>
     </header>
 
-    <div class="container portfolio-section">
+    <div class="container portfolio-section mt-4">
       <div class="portfolio-content">
         <h1>Portfolio</h1>
         <h5>Proven Results: With Expertise Across Disciplines</h5>
