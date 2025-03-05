@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | My Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+      .navbar {
+        background: linear-gradient(to right, black, #4a90e2);
+        color: white;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .header,
+      .footer,
+      .gradient-box {
+        background: linear-gradient(to right, black, #4a90e2);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .portfolio-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px 0;
+      }
+      .portfolio-content {
+        max-width: 50%;
+      }
+      .portfolio-section img {
+        max-width: 45%;
+        border-radius: 10px;
+      }
+      .youtube-section {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .video-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .video-container iframe {
+        width: 400px;
+        height: 225px;
+        border-radius: 10px;
+      }
+      .contact-section {
+        background: linear-gradient(to right, black, #4a90e2);
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .contact-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .contact-btn:hover {
+        background: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">My Blog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header text-center py-4">
+      <h1>Our Portfolio</h1>
+      <p>Showcasing Our Best Work</p>
+    </header>
+
+    <div class="container portfolio-section">
+      <div class="portfolio-content">
+        <h1>Portfolio</h1>
+        <h5>Proven Results: With Expertise Across Disciplines</h5>
+        <p>
+          Welcome to the Nexuslinc portfolio! Explore our portfolio and witness
+          the power of creativity and strategy in action. These projects
+          represent a selection of our most successful collaborations,
+          showcasing the tangible results we've delivered for our clients across
+          a range of industries. From branding and web development to digital
+          marketing and video production, our portfolio demonstrates our
+          commitment to excellence and our ability to transform visions into
+          reality.
+        </p>
+      </div>
+      <img src="images/portfolio.png" alt="Portfolio Showcase" />
+    </div>
+
+    <div class="container youtube-section">
+      <h2>Our Services in Action</h2>
+      <p>
+        Watch some of the latest videos showcasing our expertise in various
+        domains.
+      </p>
+      <div class="video-container">
+        <iframe
+          width="367"
+          height="205"
+          src="https://www.youtube.com/embed/j3jHSZQmFL8"
+          title="3D Character Animation Showreel"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="367"
+          height="205"
+          src="https://www.youtube.com/embed/ykS8m1FWCzM"
+          title="3D Medical Animation Showreel"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="367"
+          height="205"
+          src="https://www.youtube.com/embed/3R8cw4tmtE0"
+          title="3D Industrial Animation showreel"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="container contact-section">
+      <h2>Get in Touch</h2>
+      <p>
+        Have any questions or want to work with us? Contact us today and let’s
+        discuss your project.
+      </p>
+      <a href="contactUs.html" class="contact-btn">Contact Us</a>
+    </div>
+
+    <footer class="footer text-center py-2 mt-4">
+      <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
